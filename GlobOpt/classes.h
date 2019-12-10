@@ -21,11 +21,6 @@ public:
 
 	/// Метод возвращает границы области поиска
 	virtual void GetBounds(double& lower, double& upper) = 0;
-	/** Метод возвращает значение целевой функции в точке глобального минимума
-	\param[out] value оптимальное значение
-	\return Код ошибки (#OK или #UNDEFINED)
-	*/
-	virtual int GetOptimumValue(double& value) const = 0;
 	/** Метод возвращает значение функции в точке глобального минимума
 	\param[out] value оптимальное значение
 	\return Код ошибки (#OK или #UNDEFINED)
